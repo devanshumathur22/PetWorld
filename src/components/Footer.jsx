@@ -3,7 +3,7 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-600 text-gray-200 py-10">
+    <footer className="bg-gray-900 text-gray-200 py-10">
       <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">       
         <div>
           <h3 className="text-2xl font-bold text-amber-400">PetWorld</h3>

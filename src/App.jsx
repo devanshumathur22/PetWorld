@@ -443,6 +443,7 @@ import DogCat from "./Pages/DogCat";
 import Gallery from "./Pages/Gallery";
 import Pricing from "./Pages/Pricing";
 import Reviews from "./Pages/Reviews";
+import Cta from "./components/cta";
 
 
 function App() {
@@ -458,7 +459,8 @@ function App() {
     <Gallery/>
     <Reviews/>
     <Pricing/>    
-     <Contact/>      
+     <Contact/> 
+     <Cta/>     
     <Footer/>
     </div>
   );
