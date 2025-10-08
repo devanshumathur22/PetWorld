@@ -18,15 +18,15 @@ export default function Gallery() {
   }, []);
 
   return (
-    <div id="Gallery" className="relative w-full h-[500px] overflow-hidden rounded-xl shadow-lg bg-gray-50">
+    <div id="Gallery" className="relative w-full h-[500px] overflow-hidden rounded-xl shadow-lg cursor-pointer  bg-gray-50">
       {images.map((img, i) => (
         <div key={i} className={`absolute w-full h-full transition-opacity duration-1000 ${i === current ? "opacity-100" : "opacity-0"}`}>
           <img src={img} alt={`slide-${i}`} className="w-full h-full object-contain" />
         </div>
       ))}
 
-      <button onClick={() => setCurrent((current - 1 + images.length) % images.length)} className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/40 text-white p-3 rounded-full">❮</button>
-      <button onClick={() => setCurrent((current + 1) % images.length)} className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black/40 text-white p-3 rounded-full">❯</button>
+      <button onClick={() => setCurrent((current - 1 + images.length) % images.length)} className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/40 cursor-pointer hover:bg-yellow-700 text-white p-3 rounded-full">❮</button>
+      <button onClick={() => setCurrent((current + 1) % images.length)} className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black/40 cursor-pointer hover:bg-yellow-700 text-white p-3 rounded-full">❯</button>
     </div>
   );
 }

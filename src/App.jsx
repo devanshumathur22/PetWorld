@@ -433,6 +433,7 @@
 // }
 import React from "react";
 import Home from "./Pages/Home";
+import About from "./Pages/About";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Breeds from "./Pages/Breeds";
@@ -443,19 +444,21 @@ import Gallery from "./Pages/Gallery";
 import Pricing from "./Pages/Pricing";
 import Reviews from "./Pages/Reviews";
 
+
 function App() {
   return (
     <div>
       <NavBar/>
       <Home/>
+       
       <Breeds/>
-      <Contact/>
+      <About/>     
       <Trust/>
       <DogCat/>
     <Gallery/>
-    <Pricing/>
     <Reviews/>
-   
+    <Pricing/>    
+     <Contact/>      
     <Footer/>
     </div>
   );
